@@ -1,0 +1,102 @@
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, rgb(6, 6, 6), rgb(8, 9, 9));
+    }
+    .Headline {
+        color: rgb(255, 255, 0);
+        font-size:48px;
+        position: absolute;
+        top:25%;
+        left: 47%;
+        font-family: 'Antonio', sans-serif;
+        font-weight: bold; /* Added font-weight for bold text */
+    }
+    
+    .container1{
+    height: 25vh;
+    width: 25vw;
+    background:linear-gradient(45deg, rgba(128, 173, 54, 0.753), rgba(176, 173, 8, 0.493));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) ;
+    border-radius: 20px;
+    box-shadow: 10px black;
+    margin-right:20px ;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    left: 25%;   
+    }
+    .container1:hover,.container2:hover{
+        background-color: white;
+
+    }
+    .container2{
+        height: 25vh;
+        width: 25vw;
+        background:linear-gradient(45deg, rgba(128, 173, 54, 0.753), rgba(176, 173, 8, 0.493));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px) ;
+        border-radius: 20px;
+        box-shadow: 10px black;
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        position: absolute;
+        left: 53%;   
+        
+    }
+    .login{
+        background-color: cadetblue;
+        color: rgb(0, 0, 0);
+        height:80PX;
+        width: 100px;
+        position: relative;
+        left: 36%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(60, 80, 81, 0.783) ;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .login:hover{
+        background-color:white;
+        cursor: pointer;
+    }
+    .Usrname,.Pswd{
+        margin: 2px;
+    }
+    .fgt{
+        position: relative;
+        left: -3px;
+    }
+
+    .logo{
+        height:100px;
+        width: 400px;
+        position: relative;
+        left: 88px;
+        bottom: 43%;   
+        border-radius: 10px; 
+    }
+    .Headline:hover{
+        color:azure;
+    }
+    .cont{
+        display: flex;
+        flex-direction:row;
+        justify-content:center ;
+        align-items: center;
+
+    }
+@media (max-width:600px) and (min-width:397px){
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Create one column */
+        grid-gap: 10px; /* Set the gap between columns */
+    }
+}

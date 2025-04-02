@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="Sign-in.css">
+</head>
+<body>
+    <img src="output_image-removebg-preview.png"></img>
+    <div class="contatiner">
+        <div class="card1">
+            <form class="Form1">
+                    <h3>Fill The Credentials</h3>
+                    <input id="username" class="UserName" placeholder="UserName" style="height: 20px;"></input>
+                    <input id="rgno" class="Reg.No" placeholder="Reg.no" style="height: 20px;"></input>
+                    <input id="pwd" class="Pswd" placeholder="Password" style="height: 20px;"></input>
+                    <input id="mno" class="Mno" placeholder="Mobile No." style="height: 20px;"></input>
+                    <button href="" type="button" onclick="validateLogin()">Create Account</button>
+            </form>
+        </div>
+        <div class="card2">
+            <h1>Welcome to the world of books and knowledge</h1>
+            <p>Fill the data to join the family and take up the path of learning</p>
+        </div>
+    </div>
+    <script>
+    function validateLogin() {
+        let uname = document.getElementById("username").value;
+        let regno = document.getElementById("rgno").value;
+        let pwd = document.getElementById("pwd").value;
+        let mno = document.getElementById("mno").value;
+
+        if (uname !== '' || regno !== '' || pwd !== '' || mno !== '') {
+            window.location.href = "Herro Page.html";
+        } else {
+            alert("Kindly fill the details ");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(245, 243, 240);
+    position: relative;
+    right: 50px;
+    background-color: rgba(33, 27, 27, 0.112); /* Changed from 'background' to 'background-color' */
+}
+
+.header img {
+    height: 100px;
+    width: 400px;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0; /* Remove default padding */
+}
+.navr,
+    .navl {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; /* Align items vertically */
+    }
+
+
+    .navl li {
+        margin-left:  100px; 
+        padding-left: 0px;
+        position: absolute;
+    }
+    .navr li{
+        margin-right: 100px;
+        padding-right: 0px;
+        position: absolute;
+    }
+    .BB{
+        position: relative;
+        right: 190px;
+    }
+    .dash{
+        position: relative;
+        left: 290px;
+    }
+    .BR{
+        position: relative;
+        left: 120px;
+    }
+    .Logo{
+        position: relative;
+        left: 50px;
+    }
+    .Home{
+        position: relative;
+        left: 250px;
+    }
+    
+
+
+    .navr a,
+    .navl a {
+        text-decoration: none;
+        font-weight: bold; /* Make text bold */
+        text-transform: uppercase; /* Convert text to uppercase */
+        padding: 5px; /* Add padding around links */
+        color: rgb(243, 239, 234); /* Text color */
+        position: relative; /* Ensure z-index works */
+        transition: background-color 0.3s; /* Add transition effect */
+    }
+
+    .navr a::after,
+    .navl a::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(45deg, rgba(128, 173, 54, 0.753), rgba(176, 173, 8, 0.493));
+        z-index: -1; /* Ensure gradient is behind text */
+        opacity: 0; /* Initially invisible */
+        
+        transition: opacity 0.3s; /* Add transition effect */
+        border-radius: 10px;
+    }
+
+    .navr a:hover::after,
+    .navl a:hover::after {
+        opacity: 1; /* Make gradient visible on hover */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95px;
+        height: 100%;
+    }
+
+    a:hover {
+        color: rgb(7, 6, 6);
+    }
+
+    a:hover {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        font-size: 1.5rem;
+        font-family: 'Teko', sans-serif;
+    }
+    body {
+        background-color: black;
+        margin: 0px;
+        color:wheat;
+    }
+
+    .details{
+        margin-top: 13px;
+        border:20px solid  white;
+        height: 300px;
+        width: 850px;
+    }
+    .RB{
+        border:20px solid  white;   
+        position: absolute;
+        top:63%;
+        right:20px;
+        height: 250px;
+        font-size: 2rem; 
+        width:1480px;        
+    }
+    .RB div{
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .Image{
+        position: absolute;
+        height: 280px;
+        /* border: 2px white solid; */
+        width: 300px;
+        top: 140px;
+        left: 40px;
+    }
+    .Details{
+        position:absolute;
+        left: 30%;
+    }
+    .Details div{
+        display: flex;
+        margin: 10px;
+        position: relative;
+        top: 20px;
+        background-color: aliceblue;
+        width: 350px;
+        height: 20px;
+        border-radius: 2px;
+    }
+    .B1{
+        position:absolute;
+        top:70px;
+        right: 1210px;  
+    }
+    .B2{
+        position:absolute;
+        top:75px;
+        right:299px; 
+
+    }
+    .B3{
+        position:absolute;
+        top:78px;
+        right:70px; 
+        z-index: -1; 
+    }
+    .MD{
+        margin-top:0px ;
+        height: 320px;
+        width: 450px;
+        border:10px solid white;
+        position: absolute;
+        top:14%;
+        left:60%;  
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .Image{
+        height:280px;
+    }
+    .gor{
+        height: 280px;
+    }
+    .List{
+        text-align: justify;
+    }
+    .b2{
+        position: absolute;
+        height:120px;
+    }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admland.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+        <ul class="navr">
+            <li><a class="BB" href="add (2).html">Add Book</a></li>
+            <li><a class="Elb" href="update (2).html">Update Book</a></li>        
+          </ul>
+        <img class="Logo" src="output_image-removebg-preview.png">
+        <ul class="navl">
+            <li><a class="BR" href="rev.html">Add review</a></li>
+            <li><a class="BR" href="Choosing Type of User.html" style="position: relative; left: 250px;">Log Out</a></li>
+        </ul>
+        <span></span>
+        </nav>
+       </header>
+       <h1>Hello Admin!</h1>
+       <h3>Month/Date/Year/ | Day Time</h3>
+       <div class="dropdown">
+        <button class="dropbtn">View</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="changeView('day')">Day</a>
+          <a href="#" onclick="changeView('month')">Month</a>
+          <a href="#" onclick="changeView('semester')">Semester</a>
+        </div>
+      </div>
+      
+      </div>
+       <div class="info">
+            <div class="TV" style="position: relative;"><p style="position: absolute; top:-40px; left:10px; font-size: 2rem;">Total vistor</p></div>
+            <div class="BW"><p style="position: absolute; top:210px; left:530px; font-size: 2rem;">Borrowed</p></div>
+            <div class="OD"><p style="position: absolute; left:1040px; top:210px; font-size: 2rem;">Overdue</p></div>
+       </div>
+       <div class="container">
+        <div class="lnd">
+          <div class="graph">Graph Content</div>
+          <div class="lst">List Content</div>
+        </div>
+      </div>
+      
+    </body>
+<script>
+    function redir(){
+    window.location.href="Choosing Type of User.html";
+}
+function changeView(view) {
+  var dropbtn = document.querySelector('.dropbtn');
+  dropbtn.textContent = view.charAt(0).toUpperCase() + view.slice(1);
+  // Your logic to change the view based on the selected option
+}
+</script>
+</html>

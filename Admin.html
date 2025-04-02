@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
+    <title>LOGIN</title>
+</head>
+<body>
+    <img class="logo" src="output_image-removebg-preview.png">
+    <div class="cont">
+        <h1 class="Headline">L O G I N</h1>
+        <div class="container1">
+            <form class="fillup">
+                <h3>Fill The Credetials</h3>
+                <input id="username" class="Usrname" placeholder="UserName" style="height: 20px;"></input>
+                <input id="password" class="Pswd" placeholder="Password" style="height: 20px;"></input>
+            </form>
+            <button style="font-size: 30px; vertical-align: center;" class="login" onclick="validateLogin()">Login</button>
+            <a class="fgt" href="https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/in-depth/memory-loss/art-20046326">Forgot Password</a>
+        </div> 
+
+        <div class="container2">
+            <h1 style="font-size: 48px; margin-bottom:1px;">Hello Admin !</h1>
+            <p  style="font-size: 20px;">Welcome Back Again Fill your details and lets read !!!</p>
+        </div>
+    </div>
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password match the expected values
+            if (username === "biju" && password === "2005") {
+                // Redirect to a new page (you can replace "hpage.html" with the actual page URL)
+                    window.location.href = "admland.html";
+            } else {
+                // Show an alert for wrong password
+                alert("Wrong password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
+

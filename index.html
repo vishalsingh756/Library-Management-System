@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inde.css">
+    <title>Library Managment System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<div id="preloader"></div>
+<body style="margin:0px;">
+    <nav>
+        <button style="text-decoration: none; text-align: center; vertical-align: center;" class="login" type="button" onclick="redirect()">Login</button>
+        <img class="logo_nav" src="output_image-removebg-preview.png">
+        <button class="exist" type="button" onclick="redir()">New User</button>
+    </nav>
+
+    <h1 class="Headline">WELCOME TO POORNIMA UNIVERSITY LIBRARY</h1>
+<div class="body">
+    <img class="unipic" src="BG.jpeg" alt="university logo">
+    <p>Poornima University (PU) is a UGC approved Leading Private University in Rajasthan. The university is situated in Sitapura, the educational hub of Jaipur in 32 Acres sprawling, lush green campus. State – of – the – art building area of university with independent academic & administration block, hostels, laboratories, sports ground, observatory etc. provide scholarly ambience for learning & liberty. It creates a warm and protective environment with a professional atmosphere to bring out best in the student to face the cut-throat global competition. Poornima University brings together a community of wide-ranging interests, competencies & aspirations from Engineering, Architecture, Management, Commerce, Design, Science, Public Health, Computer applications and Hotel Management. Poornima University has been awarded as the best upcoming University of the India by ASSOCHAM, New Delhi. Poornima University has been awarded as the Top Private University of Rajasthan -2018.</p>
+</div>
+<div class="ticker-container">
+    <div style="color: aliceblue;"  class="ticker-content" id="tickerContent">
+      
+      <!-- Add your ticker items here -->
+      <span class="ticker-item">New Releases</span>
+      <span class="ticker-item">Book 1</span>
+      <span class="ticker-item">Book 2</span>
+      <span class="ticker-item">Book 3</span>
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+  <script>
+    function redirect(){
+      window.location.href="Choosing Type of User.html";
+    }
+    function redir(){
+      window.location.href="SignIn.html";
+    }
+    // You can add or remove items from this array
+    const tickerItems = [
+    //   'Book 1',
+    //   'Book 2',
+    //   'Book 3',
+      // Add more items as needed
+    ];
+  
+    // Get the ticker content container
+    const tickerContent = document.getElementById('tickerContent');
+  
+    // Populate the ticker with items
+    tickerItems.forEach(item => {
+      const tickerItem = document.createElement('span');
+      tickerItem.classList.add('ticker-item');
+      tickerItem.textContent = item;
+      tickerContent.appendChild(tickerItem);
+    });
+    var loader=document.getElementById("preloader");
+
+    window.addEventListener("load",function(){
+      loader.style.display="none";
+    } )
+
+  </script>
+</body>
+
+</html>

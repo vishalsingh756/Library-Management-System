@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    flex-direction: column;
+}
+body{
+    background: linear-gradient(45deg,#0c0c0c,#0e0d0d); 
+}
+.Std{
+    height: 5.3rem;
+    width: 8rem;
+    border-radius: 9px;
+    background :linear-gradient(45deg, rgba(128, 173, 54, 0.753), rgba(176, 173, 8, 0.493));
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.Adm{
+    height: 6rem;
+    width: 8rem;
+    border-radius: 9px;
+    background :linear-gradient(45deg, rgba(128, 173, 54, 0.753), rgba(176, 173, 8, 0.493));
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Adm:hover,.Std:hover{
+    background-color: aliceblue;
+    color: #000;
+}
+.logo{
+height:100px;
+width: 400px;
+display: flex;
+justify-content: center;
+border-radius: 10px;
+position:absolute;
+left:38%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  .column {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+</style>
+    <link rel="stylesheet" href="Book rev.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+        <ul class="navr">
+            <li><a class="BB" href="Book Borrow.html">Book Borrow</a></li>
+            <li><a class="Elb"href="elib.html">E-Library</a></li>
+        </ul>
+        <img class="Logo" src="output_image-removebg-preview.png">
+        <ul class="navl">
+            <li><a class="BR" href="Herro Page.html">Home</a></li>
+            <li><button class="dash" type="button" onclick="redir()"></button></li>
+        </ul>
+        <span></span>
+        </nav>   </header>
+    <h1>
+        BOOK REVIEW
+    </h1>
+    <div class="grid" id="gridContainer"></div>
+    <script>
+        function redir(){
+            window.location.href="Dashboard.html";
+        }
+        const gridContainer = document.getElementById("gridContainer");
+      
+        // Creating 25 columns dynamically
+        for (let i = 0; i < 25; i++) {
+          // Create a new div element for the column
+          let column = document.createElement("div");
+          column.className = "column";
+      
+          // Create image element
+          let img = document.createElement("img");
+          img.src = "https://via.placeholder.com/150"; // Placeholder image URL
+          column.appendChild(img);
+      
+          // Create first paragraph element
+          let paragraph1 = document.createElement("p");
+          paragraph1.textContent = "Paragraph 1";
+          column.appendChild(paragraph1);
+      
+          // Create second paragraph element
+          let paragraph2 = document.createElement("p");
+          paragraph2.textContent = "Paragraph 2";
+          column.appendChild(paragraph2);
+      
+          // Append the column to the grid container
+          gridContainer.appendChild(column);
+        }
+    </script>
+</body>
+</html>
